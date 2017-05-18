@@ -1,41 +1,121 @@
+* {
+}
 body {
+    overflow: hidden;
     margin: 0;
     width: 1600px;
     height: 800px;
-    background-color: rgb(32, 32, 32);
-  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
-  background-size: 10px 10px, 10px 10px, 10px 5px;
-  background-position: 0px 0px, 5px 5px, 0px 0px;
+    /*
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: rgb(32, 32, 50);
+    background-size: 16px 16px;
+    */
+    background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
 }
+body h3 {
+  font-family: 'Sense','Lato',Helvetica,Arial,sans-serif;
+  font-weight: 900;
+}
+
 .navigation {
-  display: flex;
-  flex-direction: row;
-}
-.navigation a {
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: inline;
-  height: 30px;
-  width: auto;
-  margin: auto;
-}
-.navigation a:hover {
-  color: grey;
-}
-
-.breadtext {
-    margin: auto;
-}
-
-.breadtext {
-    width: 400px;
     height: auto;
-    margin: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background: #CCCCCF;
 }
-#currentSign {
-  margin: 50% auto;
-  height: 100px;
-  width: 200px;
-  color: white;
+
+.navigation a {
+    font-weight: bold;
+    /*background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    */
+    background-color: rgb(32, 32, 32);
+    background-size: 16px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    height: 40px;
+    width: auto;
+    margin: 10px auto;
+}
+
+.btn-primary,
+.btn-primary:active {
+    border: 0;
+}
+
+.navigation a:hover {
+
+}
+
+.horoCrimson:hover,
+.active .horoCrimson {
+  background: linear-gradient(#b01712 20%,rgb(32,32,32) 20%);
+    color: #b01712;
+}
+
+.horoBeige:hover,
+.active .horoBeige {
+  background: linear-gradient(#c9874d 20%,rgb(32,32,32) 20%);
+    color: #c9874d;
+}
+
+.horoIce:hover,
+.active .horoIce {
+  background: linear-gradient(#bae3d3 20%,rgb(32,32,32) 20%);
+    color: #bae3d3;
+}
+
+.horoTears:hover,
+.active .horoTears {
+  background: linear-gradient(#28c8f0 20%,rgb(32,32,32) 20%);
+    color: #28c8f0;
+}
+
+.findsign {
+    position: absolute;
+    left: 800px;
+    top: 400px;
+    width: 600px !important;
+}
+
+.infocanvas {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 1000px;
+    height: auto;
+    margin: auto auto;
+}
+
+.month {
+    width: 100px;
+}
+#signForm {
+  color: black;
+}
+.tab-pane {
+    margin-top: 20px;
+    margin-left: 100px;
+    position: absolute;
+    width: 800px;
+    height: auto;
+}
+
+.well {
+    /*background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+  */
+    background-color: rgb(32,32,32);
+    background-size: 16px 16px;
+    border: 3px solid rgb(150, 150, 150);
+    font-size: 18px;
+    width: 800px;
+    margin: 10px;
+    color: #CCCCCF;
 }
